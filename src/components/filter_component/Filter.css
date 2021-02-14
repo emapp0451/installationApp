@@ -1,0 +1,13 @@
+.styled-select {
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+ }
+
+ .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
