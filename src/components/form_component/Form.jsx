@@ -151,7 +151,7 @@ class Form extends Component {
                                     </div> 
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                        <label for="type" className="col-sm-2 control-label">Software Type</label>
+                                        <label for="type" className="col-sm-6 control-label">Software Type</label>
                                             <select type="type" className="form-control" id="type" value={this.state.type} name="type" placeholder="software type" onChange={(data )=>{this.setState({type:data.target.value})}}>
                                                 <option value="" disabled selected>Choose your option</option>
                                                 <option value="systemsoftware">systemsoftware</option>
@@ -179,7 +179,7 @@ class Form extends Component {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                        <label for="Lisence" className="col-sm-2 control-label">Lisence</label>
+                                        <label for="Lisence" className="col-sm-3 control-label">Lisence</label>
                                             <select type="lisence" className="form-control" id="lisence" value={this.state.license} name="lisence" placeholder="please enter lisence" onChange={(data )=>{this.setState({license:data.target.value})}}>
                                                 <option value="" disabled selected>Choose your option</option>
                                                 <option value="yes">Yes</option>
@@ -203,22 +203,14 @@ class Form extends Component {
                                 <div className="col-md-6">
                                         <div className="form-group">
                                         <label for="ram" className="col-sm-2 control-label">RAM</label>
-                                            <select type="ram" className="form-control" id="ram" value={this.state.ram} name="ram" onChange={(data )=>{this.setState({ram:data.target.value})}} placeholder="ram">
-                                                <option value="" disabled selected>Choose your option</option>
-                                                <option value="2">2</option>
-                                                <option value="4">4</option>
-                                            </select> 
+                                            <input id="form_maker" type="text" value={this.state.ram} name="ram" className="form-control" placeholder="Please enter Ram" onChange={(data )=>{this.setState({ram:data.target.value})}} />
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                        <label for="hardDisk" className="col-sm-2 control-label">Hard disk</label>
-                                            <select type="hardDisk" className="form-control" id="hardDisk" value={this.state.hardDisk} name="hardDisk" onChange={(data )=>{this.setState({hardDisk:data.target.value})}} placeholder="hard disk">
-                                                <option value="" disabled selected>Choose your option</option>
-                                                <option value="500">500</option>
-                                                <option value="1000">1000</option>
-                                            </select> 
+                                        <label for="hardDisk" className="col-sm-4 control-label">Hard disk</label> 
+                                            <input id="form_maker" type="text" value={this.state.hardDisk} name="hardDisk" className="form-control" placeholder="Please enter HardDisk" onChange={(data )=>{this.setState({hardDisk:data.target.value})}} />
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -226,12 +218,8 @@ class Form extends Component {
                                 <div className="row">
                                 <div className="col-md-6">
                                         <div className="form-group">
-                                        <label for="graphics" className="col-sm-2 control-label">Graphics</label>
-                                            <select type="graphics" className="form-control" id="graphics" value={this.state.graphics} name="graphics" onChange={(data )=>{this.setState({graphics:data.target.value})}} placeholder="Graphics">
-                                                <option value="" disabled selected>Choose your option</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select> 
+                                        <label for="graphics" className="col-sm-3 control-label">Graphics</label> 
+                                            <input id="form_maker" type="text" value={this.state.graphics} name="graphics" className="form-control" placeholder="Please enter Graphics" onChange={(data )=>{this.setState({graphics:data.target.value})}}/>
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -250,24 +238,13 @@ class Form extends Component {
                                 <div className="row">
                                 <div className="col-md-6">
                                         <div className="form-group">
-                                        <label for="os" className="col-sm-2 control-label">OS</label>
+                                        <label for="os" className="col-sm-6 control-label">Operating System</label>
                                             <select type="os" className="form-control" id="os" name="os" value={this.state.os} onChange={(data )=>{this.setState({os:data.target.value})}} placeholder="Operating system">
                                                 <option value="" disabled selected>Choose your option</option>
                                                 <option value="windows">Windows</option>
                                                 <option value="linux">Linux</option>
                                                 <option value="mac">Mac</option>
                                             </select> 
-                                            <div className="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-group">
-                                            <label for="form_about">Install type</label>
-                                            <select type="stepType" className="form-control" id="stepType" value={this.state.stepType} name="stepType" onChange={(data )=>{this.setState({stepType:data.target.value})}} placeholder= "System required ">
-                                                    <option value="" disabled selected>Choose your option</option>
-                                                    <option value="Install">Install</option>
-                                                    <option value="Uninstall">Uninstall</option>
-                                                </select> 
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
